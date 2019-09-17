@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>Анализ постов инст СНГ - Publer</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Publer</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Добро пожаловать</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Рекламные посты <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../filters/">Анализ рекламных постов ВК</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../mention/">Анализ упоминаний ВК</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../repost/">Анализ репостов ВК</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Odnoklasniki/">Анализ постов в Одноклассниках</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Анализ постов инст СНГ</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../burj/">Анализ постов инст БУРЖ</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Паблики/профили <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../publicsVK/">Подбор пабликов Вконтакте</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../publicsOK/">Подбор групп в Одноклассниках</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../profilesinstsng/">Подбор профилей в Instagram СНГ</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../profilesinstburj/">Подбор профилей Instagram БУРЖ</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../targetVK/">Как работать с разделом "Таргет ВК"</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">myTarget <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../mobapps/">Мобильные приложения</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../web/">Анализ объявлений в WEB-ленте</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../teasers/">Анализ тизеров</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../mobsites/">Мобайл сайты</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../teaserwebs/">Тизерные сети</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Odnoklasniki/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../burj/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#instagram">Анализ постов в Instagram СНГ</a></li>
+            <li class="second-level"><a href="#_1">Всем привет!</a></li>
+                
+            <li class="second-level"><a href="#_2">Обзор фильтров</a></li>
+                
+            <li class="second-level"><a href="#_3">Анализ публикаций</a></li>
+                
+            <li class="second-level"><a href="#_4">Вывод</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="instagram">Анализ постов в Instagram СНГ</h1>
+<h2 id="_1"><strong>Всем привет!</strong></h2>
+<p>Рекламируетесь в Instagram? Это отличный источник трафика. С помощью сервиса мониторинга рекламы <a href="https://publer.pro">publer.pro</a> вы можете вдохновиться на создание топовых крео или проанализировать конкурентов, чтобы рекламные кампании были ещё более профитными. В этой статье мы разберём основные инструменты, которые помогут вам в работе.</p>
+<h2 id="_2"><strong>Обзор фильтров</strong></h2>
+<p>Для того чтобы поиск объявлений был релевантным вашим запросам, в <a href="https://publer.pro">publer.pro</a> есть множество фильтров:</p>
+<p><img alt="" src="https://sun9-34.userapi.com/c846221/v846221899/1fbf75/lvQLfbnpUxI.jpg" /></p>
+<p>— <strong>Период</strong>. Здесь вы можете выбрать период времени, за который будут отображаться посты. Если вам нужны конкретные даты, вы можете вбить их вручную.</p>
+<p>— <strong>Сортировка</strong>. С помощью этого фильтра вы можете выбрать, в какой последовательности будут отображаться посты. Например, вы можете сначала посмотреть посты, которые набрали больше всего лайков или самые свежие публикации.</p>
+<p>— <strong>На странице</strong>. Здесь вы можете выбрать, сколько объявлений будет отображаться на одной странице поиска.</p>
+<p>— <strong>Тип поста</strong>. Здесь вы можете выбрать посты, в которых есть фото или видео.</p>
+<p>— <strong>Удалённые</strong>. С помощью этого фильтра вы можете увидеть посты, которые уже удалены из Instagram, но продолжают отображаться в <a href="https://publer.pro">publer.pro</a>.</p>
+<p>— <strong>В ссылках</strong>. С помощью этого фильтра вы можете посмотреть посты, в которых есть какая-то определённая ссылка. Например, это может быть сайт вашего конкурента.</p>
+<p>— <strong>Тег</strong>. С помощью этого фильтра вы можете искать посты с нужным вам хештегом.</p>
+<p>— <strong>Упоминаемый</strong>. В эту графу вы можете вставить ссылку на профиль или его название и посмотреть, в каких постах этот пользователь упоминается.</p>
+<p>— <strong>В профиле</strong>. С помощью этого фильтра вы можете посмотреть рекламные посты в каком-то определённом профиле.</p>
+<p>— <strong>В тексте</strong>. В эту графу вы можете вбить ключевой запрос для поиска. Например, если вы напишете «курсы английского языка», в выдачу попадут объявления, в тексте которых есть эта фраза. Обратите внимание, если вы будете использовать простые формы слов, выдача будет шире. То есть по запросу «готов к ЕГЭ» вы увидите объявления с фразами «подГОТОВься к ЕГЭ», «ГОТОВим к ЕГЭ» и так далее.</p>
+<p>— <strong>Лайков от</strong>. Для того чтобы отсеять непопулярные публикации, вы можете указать минимальное количество лайков под постом.</p>
+<p>— <strong>Комментариев от</strong>. С помощью этого фильтра вы можете посмотреть публикации, которые вызвали обсуждение в комментариях. Для этого нужно указать минимальное количество комментариев под постом.</p>
+<p>— <strong>Подписчиков от/до</strong>. С помощью этого фильтра вы можете выбрать, сколько подписчиков будет в профилях с рекламными объявлениями.</p>
+<p>— <strong>Цена поста</strong>. С помощью этого фильтра вы можете выбрать минимальную и максимальную стоимость поста на бирже.</p>
+<p>— <strong>Биржа</strong>. С помощью этого фильтра вы можете выбрать публикации, которые были размещены через определённую биржу рекламы.</p>
+<h2 id="_3"><strong>Анализ публикаций</strong></h2>
+<p>Давайте представим, что вы продвигаете услуги маникюра в Instagram и хотите разместить рекламную публикацию. Для того чтобы она хорошо зашла, вы решили посмотреть, как это делают другие и зашли за вдохновением в сервис мониторинга рекламы <a href="https://publer.pro">publer.pro</a>.</p>
+<p><img alt="" src="https://sun9-26.userapi.com/c846221/v846221646/203085/c8wAQGrMgns.jpg" /></p>
+<p>Представим, что вы хотите разместить в своём объявлении видео. Для того чтобы проанализировать креативы, напишем в графе поиска «маникюр», выберем тип поста «видео» и поставим минимальное количество лайков 300.</p>
+<p>Нажимаем на «Найти» и рядом с этой кнопкой появляется кнопка «Активность». Если нажать на неё, вы увидите, как часто и в какое время выходят посты по вашему запросу:</p>
+<p><img alt="" src="https://sun9-27.userapi.com/c855620/v855620646/3ba54/D0mkN4tBPnY.jpg" /></p>
+<p>В выдаче вы будете видеть рекламные объявления вот в таком формате:</p>
+<p><img alt="" src="https://sun9-19.userapi.com/c855620/v855620981/3aa45/HgGa4aWEAeI.jpg" /></p>
+<p>Давайте поподробнее разберём детали, которые помогут вам в работе:</p>
+<p><img alt="" src="https://sun9-2.userapi.com/c855620/v855620981/3aa6e/GQULNJWGfqg.jpg" /></p>
+<p>1) Название профиля, в котором было размещено рекламное объявление.</p>
+<p>2) Информация о профиле: количество подписчиков, подписок и публикаций, а также дата и время выхода поста.</p>
+<p>3) Нажав на кнопку «посты» вы сможете посмотреть все рекламные посты в этом профиле.</p>
+<p>4) Нажав на кнопку «упоминания» вы можете посмотреть все публикации, в которых упоминается данный профиль.</p>
+<p>5) Нажав на звёздочку, вы можете сохранить данное объявление в «Избранное» для последующего анализа.</p>
+<p>6) Если навести курсор на значок с графиком, вы увидите статистику по данному профилю:</p>
+<p><img alt="" src="https://sun9-2.userapi.com/c855620/v855620981/3aa75/9wmT1ai_3Qg.jpg" /></p>
+<p>7) Количество комментариев под постом.</p>
+<p>8) Количество лайков под постом.</p>
+<p>9) Хештеги, которые используются в посте.</p>
+<p>10) Если навести курсор на превью видео, появится иконка со стрелочкой. Если на неё нажать, креатив скачается к вам на компьютер.</p>
+<h2 id="_4"><strong>Вывод</strong></h2>
+<p>Итак, мы разобрали все основные функции, которые помогут вам создать конвертящие рекламные посты в Instagram СНГ. Анализируйте действия конкурентов, придумывайте огненные крео и увеличивайте свой профит.</p>
+<p><strong>Удачи!</strong></p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

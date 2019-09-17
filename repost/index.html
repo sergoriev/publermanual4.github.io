@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>Анализ репостов ВК - Publer</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Publer</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Добро пожаловать</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Рекламные посты <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../filters/">Анализ рекламных постов ВК</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../mention/">Анализ упоминаний ВК</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Анализ репостов ВК</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Odnoklasniki/">Анализ постов в Одноклассниках</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../InstSNG/">Анализ постов инст СНГ</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../burj/">Анализ постов инст БУРЖ</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Паблики/профили <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../publicsVK/">Подбор пабликов Вконтакте</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../publicsOK/">Подбор групп в Одноклассниках</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../profilesinstsng/">Подбор профилей в Instagram СНГ</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../profilesinstburj/">Подбор профилей Instagram БУРЖ</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../targetVK/">Как работать с разделом "Таргет ВК"</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">myTarget <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../mobapps/">Мобильные приложения</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../web/">Анализ объявлений в WEB-ленте</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../teasers/">Анализ тизеров</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../mobsites/">Мобайл сайты</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../teaserwebs/">Тизерные сети</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../mention/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../Odnoklasniki/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#_1">Анализ репостов ВКонтакте</a></li>
+            <li class="second-level"><a href="#_2">Привет, друзья!</a></li>
+                
+            <li class="second-level"><a href="#_3">Обзор фильтров</a></li>
+                
+            <li class="second-level"><a href="#_4">Анализ репостов</a></li>
+                
+            <li class="second-level"><a href="#_5">Вывод</a></li>
+                
+            <li class="second-level"><a href="#_6">Удачи!</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="_1">Анализ репостов ВКонтакте</h1>
+<h2 id="_2"><strong>Привет, друзья!</strong></h2>
+<p>Во ВКонтакте есть несколько способов создать рекламную запись. Один из них — сделать репост какой-либо публикации. С помощью сервиса мониторинга рекламы <a href="https://publer.pro">publer.pro</a> вы можете проанализировать только объявления с репостами. Как это сделать мы и расскажем в этой статье.</p>
+<h2 id="_3"><strong>Обзор фильтров</strong></h2>
+<p>Для того чтобы поиск объявлений был релевантным вашим запросам, в <a href="https://publer.pro">publer.pro</a> есть множество фильтров:</p>
+<p><img alt="" src="https://sun9-14.userapi.com/c845124/v845124504/207dc7/cdOz3hhc738.jpg" /></p>
+<p>— <strong>Период</strong>. Здесь вы можете выбрать период времени, за который будут отображаться посты. Если вам нужны конкретные даты, вы можете вбить их вручную.</p>
+<p>— <strong>Сортировка</strong>. С помощью этого фильтра вы можете выбрать, в какой последовательности будут отображаться посты. Например, вы можете сначала посмотреть репосты, которые больше всего лайкали или репосты публикаций, которые чаще всего просматривали.</p>
+<p>— <strong>Результатов на странице</strong>. Здесь вы можете выбрать, сколько объявлений будет отображаться на одной странице поиска.</p>
+<p>— <strong>Биржа</strong>. С помощью этого фильтра вы можете выбрать репосты, которые были размещены через определённую биржу рекламы.</p>
+<p>— <strong>В тексте</strong>. В эту графу вы можете вбить ключевой запрос для поиска. Например, если вы напишете «курсы английского языка», в выдачу попадут объявления, в тексте которых есть эта фраза. Обратите внимание, если вы будете использовать простые формы слов, выдача будет шире. То есть по запросу «готов к ЕГЭ» вы увидите объявления с фразами «подГОТОВься к ЕГЭ», «ГОТОВим к ЕГЭ» и так далее.</p>
+<p>— <strong>Репосты поста</strong>. Если вы введёте в эту графу ссылку на пост, вы можете посмотреть, сколько раз и какие сообщества его репостили.</p>
+<p>— <strong>Репосты в группе</strong>. С помощью этого фильтра вы можете посмотреть все репосты в какой-то определённой группе.</p>
+<p>— <strong>Репосты группы</strong>. С помощью этого фильтра вы можете посмотреть репосты записей какой-то определённой группы.</p>
+<blockquote>
+<p><strong>Важно!</strong> Анализ репостов в группе и репостов группы работает только для открытых сообществ 
+с более чем 10 тысячами подписчиков.</p>
+</blockquote>
+<p>— <strong>Репостов исходного поста</strong>. Для того чтобы отсеять посты, которые мало репостят, вы можете ввести минимальное количество репостов исходного поста.</p>
+<p>— <strong>Лайков исходного поста</strong>. Для того чтобы в выдачу попали только популярные публикации, вы можете указать минимальное количество лайков исходного поста.</p>
+<p>— <strong>Лайков репоста</strong>. Для того чтобы увидеть только репосты, которые получили хорошую отдачу пользователей, вы можете указать минимальное количество лайков репоста.</p>
+<p>— <strong>Репостов репоста</strong>. Для того чтобы отсеять непопулярные репосты, вы можете указать минимальное значение репостов репостнутой записи.</p>
+<p>— <strong>ER репоста</strong>. ER — это степень вовлечённости пользователей. Этот показатель рассчитывается по формуле лайки+репосты+комментарии / количество просмотров поста. Соответственно, вы можете посмотреть только репосты, которые заинтересовали пользователей.</p>
+<p>— <strong>ER исходного поста</strong>. Здесь всё то же самое, что и в предыдущем фильтре, только для исходного поста.</p>
+<p>— <strong>Страна</strong>. Если вам нужны паблики, в которых большое количество подписчиков из определённой страны, поставьте галочку в этом фильтре рядом с RU, UA, BY или KZ.</p>
+<h2 id="_4"><strong>Анализ репостов</strong></h2>
+<p>Давайте представим, что вы продвигаете тональный крем во ВКонтакте и хотите разместить рекламную запись в виде репоста. Для того чтобы она хорошо зашла, вы решили посмотреть, как это делают другие и зашли за вдохновением в сервис мониторинга рекламы publer.pro.</p>
+<p>Выставим фильтры:</p>
+<p><img alt="" src="https://sun9-52.userapi.com/c845124/v845124778/200c40/WUu6kgfK5H8.jpg" /></p>
+<p>Будем анализировать репосты, которые вышли за последний месяц. В графе в тексте напишем «тональный крем» и выберем сортировку по просмотрам репоста.</p>
+<blockquote>
+<p><strong>Важно!</strong> Некоторые недобросовестные вебмастера накручивают лайки на своих рекламных 
+записях. Если вы хотите посмотреть популярные публикации по своей теме, лучше выбирать 
+сортировку по просмотрам.</p>
+</blockquote>
+<p>Выбрав необходимые параметры, вы можете нажать на кнопку «Найти посты» или просто нажать Enter.</p>
+<p>В выдаче вы будете видеть рекламные объявления вот в таком формате:</p>
+<p><img alt="" src="https://sun9-2.userapi.com/c845124/v845124778/200c53/stSxSBwbFQg.jpg" /></p>
+<p>Давайте поподробнее разберём детали, которые помогут вам в работе:</p>
+<p><img alt="" src="https://sun9-25.userapi.com/c845220/v845220702/1fe3b5/AEEuwJ6XJgg.jpg" /></p>
+<p>1) Название сообщества, в котором был сделан репост. Оно кликабельное, нажав на него, вы можете перейти во ВКонтакте и изучить паблик подробнее.</p>
+<p>2) Чёрным написано количество подписчиков данного паблика. В скобках написано изменение количества подписчиков за последние сутки.</p>
+<p>3) Информация о рекламном посте: дата публикации, количество лайков, репостов, комментариев и просмотров, ER, CPM с биржи, через которую было размещено объявление и цена поста.</p>
+<p>4) Нажав на эту кнопку вы можете посмотреть репосты публикаций этого паблика.</p>
+<p>5) Нажав на эту кнопку, вы можете посмотреть репосты, которые делал данный паблик.</p>
+<p>6) Если вы нажмёте на «анализ паблика», вы увидите подробную информацию про группу, в которой был размещён репост:</p>
+<p><img alt="" src="https://sun9-5.userapi.com/c845220/v845220778/20133f/Apmbn_xzUYU.jpg" /></p>
+<p>Здесь вы можете:</p>
+<p>— Проверить пересечение аудиторий в двух пабликах;</p>
+<p>— Узнать информацию о том, когда в этой группе выходили рекламные посты;</p>
+<p>— Проанализировать активность подписчиков по дням недели и часам;</p>
+<p>— Проанализировать аудиторию сообщества;</p>
+<p>— Узнать средние показатели, которые набирают рекламные посты.</p>
+<p>7) Если навести курсор на значок с графиком, вы увидите статистику по данному паблику:</p>
+<p><img alt="" src="https://sun9-52.userapi.com/c851328/v851328010/117d2c/bvHDxtCzZT8.jpg" /></p>
+<p>8) Нажав на звёздочку, вы можете сохранить данное объявление в «Избранное» для последующего анализа.
+Помимо анализа репоста и паблика, в котором он был размещён, вы можете посмотреть информацию про оригинальный пост.</p>
+<p>9) Нажав на эту кнопку вы можете посмотреть репосты публикаций паблика, в котором был размещён оригинальный пост.</p>
+<p>10) Если вы нажмёте на «анализ паблика», вы увидите подробную информацию про группу, в которой был размещён оригинальный пост.</p>
+<p>11) Если вы нажмёте на «репосты поста», то сможете увидеть все группы, которые репостнули данную публикацию.</p>
+<p>Помимо этого, вы можете проанализировать, когда и сколько репостов по вашему запросу выходило. Для этого вам нужно нажать на кнопку «Динамика», которая находится наверху страницы, под фильтрами:</p>
+<p><img alt="" src="https://sun9-26.userapi.com/c854016/v854016702/3a2fe/9FdJ4MjivGI.jpg" /></p>
+<p>Для ключевого запроса «тональный крем» график выглядит так:</p>
+<p><img alt="" src="https://sun9-41.userapi.com/c854016/v854016702/3a307/AFFl51sANls.jpg" /></p>
+<p>Как мы видим, количество репостов увеличивается, начиная с конца марта. Это можно объяснить тем, что большинство объявлений с ключевым запросом «тональный крем» рекламируют крем Lamiton. Он появился на рынке как раз в конце марта и его активно рекламируют, поэтому график растёт.</p>
+<h2 id="_5"><strong>Вывод</strong></h2>
+<p>Итак, мы разобрали все основные функции, которые помогут вам создать конвертящие репосты ВКонтакте. Анализируйте действия конкурентов, придумывайте огненные крео и увеличивайте свой профит.</p>
+<h2 id="_6"><strong>Удачи!</strong></h2></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
